@@ -4,22 +4,21 @@ def import_friends(thingamabobs,users):
         temporaryactions.append(thingamabob.split(" "))
     for i in range(len(temporaryactions)):
         if "added" in temporaryactions[i]: #might have to add a space on the start of end of the string
-            print("this has an add friend",temporaryactions[i])
-        for user in users:
-             if user.first == temporaryactions[i][0] and user.last == temporaryactions[i][1]: #might cause errors because of how split works or it might not
-                 addfriendquestionmark = 0
-                 for friend in user.friends:
-                     if friend == (temporaryactions[i][3],temporaryactions[i][4]):
-                         addfriendquestionmark = 1
-                    if addfriendquestionmark == 0:
-                        user.friends.append(temporaryactions[i][3],temporaryactions[i][4])
-                if user.first == temporaryactions[i][3] and user.last == temporaryactions[i][4]:
-                    addfriendquestionmark = 0
-                    for friend in user.friends:
-                        if friend == (temporaryactions[i][0],temporaryactions[i][1]):
+            for user in users:
+                 if user.first == temporaryactions[i][0] and user.last == temporaryactions[i][1]: #might cause errors because of how split works or it might not
+                     addfriendquestionmark = 0
+                     for friend in user.friends:
+                        if friend == (temporaryactions[i][3],temporaryactions[i][4]):
                             addfriendquestionmark = 1
-                    if addfriendquestionmark == 0:
-                        user.friends.append(temporaryactions[i][0],temporaryactions[i][1])
+                        if addfriendquestionmark == 0:
+                            user.friends.append(temporaryactions[i][3],temporaryactions[i][4])
+                        if user.first == temporaryactions[i][3] and user.last == temporaryactions[i][4]:
+                            addfriendquestionmark = 0
+                        for friend in user.friends:
+                            if friend == (temporaryactions[i][0],temporaryactions[i][1]):
+                                addfriendquestionmark = 1
+                        if addfriendquestionmark == 0:
+                            user.friends.append(temporaryactions[i][0],temporaryactions[i][1])
 #just alters users to include friends
 #feed it posts
 import_friends([
