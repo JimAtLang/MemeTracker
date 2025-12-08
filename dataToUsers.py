@@ -11,3 +11,7 @@ def dataToUsers(strings):
                     u.posts.append("".join(b))
                 if s.split(" ")[3]=="liked":
                     //do some stuff
+//this stuff is when it misses everything
+u:User=none
+u.firstName=s.split(" ")[0]
+u.firstName=s.split(" ")[1]
