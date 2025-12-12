@@ -1,4 +1,5 @@
 f = open("log.txt", "r")
+# useless comment
 lines = f.readlines()
 edited = []
 for line in lines:
