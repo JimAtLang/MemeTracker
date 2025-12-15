@@ -1,9 +1,8 @@
 import datetime
 
 class User:
-    def __init__(self, posts, firstName:str="", lastName:str="", joinDate:datetime="", friends=""):
+    def __init__(self, firstName:str="", lastName:str="", friends=""):
         self.firstName:str=firstName
         self.lastName:str=lastName
-        self.joinDate:datetime=joinDate
         self.friends=[]
         self.posts=[]

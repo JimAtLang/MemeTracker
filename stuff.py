@@ -1,3 +1,7 @@
+from User import User
+
+steve = User("Crystal","Coleman")
+
 def import_friends(thingamabobs,users):
     temporaryactions = []
     for thingamabob in thingamabobs:
@@ -5,14 +9,14 @@ def import_friends(thingamabobs,users):
     for i in range(len(temporaryactions)):
         if "added" in temporaryactions[i]: #might have to add a space on the start of end of the string
             for user in users:
-                 if user.first == temporaryactions[i][0] and user.last == temporaryactions[i][1]: #might cause errors because of how split works or it might not
+                 if user.firstName == temporaryactions[i][0] and user.lastName == temporaryactions[i][1]: #might cause errors because of how split works or it might not
                      addfriendquestionmark = 0
                      for friend in user.friends:
                         if friend == (temporaryactions[i][3],temporaryactions[i][4]):
                             addfriendquestionmark = 1
                         if addfriendquestionmark == 0:
                             user.friends.append(temporaryactions[i][3],temporaryactions[i][4])
-                        if user.first == temporaryactions[i][3] and user.last == temporaryactions[i][4]:
+                        if user.firstName == temporaryactions[i][3] and user.lastName == temporaryactions[i][4]:
                             addfriendquestionmark = 0
                         for friend in user.friends:
                             if friend == (temporaryactions[i][0],temporaryactions[i][1]):
@@ -29,4 +33,5 @@ import_friends([
 'Christopher Kelley reposted James Kellys image macro meme about oversleeping on July 24, 2021',
 'Crystal Coleman liked Samuel Grimess Nobody at all: meme about dogs on September 21, 2021',
 'Tristan Patterson posted a 4 panel comic meme about perfume on November 22, 2021'
-],["Steve Jobs"])
+],[steve])
+print(steve.friends)
