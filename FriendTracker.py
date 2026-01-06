@@ -1,4 +1,4 @@
- def get_friends():
+def get_friends():
     f = open("log.txt", "r")
     lines = f.readlines()
     friendlines = []
