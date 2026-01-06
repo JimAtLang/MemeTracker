@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 f = open("log.txt", "r")
 
 lines = f.readlines()
@@ -15,3 +16,5 @@ for line in lines:
         edited.append("[4] " + line)
 new = open("new.txt", "w")
 new.writelines(edited)
+=======
+>>>>>>> 22f2fc8fc111ef1ad4daf705c7eff0cdff2e24e3

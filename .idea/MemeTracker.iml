@@ -1,12 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <module type="PYTHON_MODULE" version="4">
   <component name="NewModuleRootManager">
+<<<<<<< HEAD
     <content url="file://$MODULE_DIR$" />
 <<<<<<< HEAD
     <orderEntry type="inheritedJdk" />
 =======
     <orderEntry type="jdk" jdkName="Python 3.13" jdkType="Python SDK" />
 >>>>>>> dc746dd530e04b6d8fb0351ba009d95aa8aab5bd
+=======
+    <content url="file://$MODULE_DIR$">
+      <excludeFolder url="file://$MODULE_DIR$/.venv" />
+    </content>
+    <orderEntry type="jdk" jdkName="Python 3.13 (MemeTracker)" jdkType="Python SDK" />
+>>>>>>> 22f2fc8fc111ef1ad4daf705c7eff0cdff2e24e3
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

@@ -8,6 +8,10 @@
 =======
     <option name="sdkName" value="Python 3.13" />
   </component>
+<<<<<<< HEAD
   <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13" project-jdk-type="Python SDK" />
 >>>>>>> dc746dd530e04b6d8fb0351ba009d95aa8aab5bd
+=======
+  <component name="ProjectRootManager" version="2" project-jdk-name="Python 3.13 (MemeTracker)" project-jdk-type="Python SDK" />
+>>>>>>> 22f2fc8fc111ef1ad4daf705c7eff0cdff2e24e3
 </project>
