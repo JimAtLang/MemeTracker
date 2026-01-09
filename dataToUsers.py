@@ -1,10 +1,10 @@
 from User import User
 
-def dataToUsers(strings):
+def dataToUsers(strings:list[str]):
     users=[]
     for s in strings:
         for user in users:
-            u:User=None
+            u=user
             if s.split(" ")[0]==user.firstName and s.split(" ")[1]==user.lastName:
                 #if s.split(" ")[3]=="added":
                     #do some stuff
@@ -16,9 +16,8 @@ def dataToUsers(strings):
                     #do some stuff
                 continue
             #this stuff is when it misses everything
-            u:User=None
-            u.firstName=s.split(" ")[0]
-            u.firstName=s.split(" ")[1]
-            print("first"+u.firstName)
-            print("last"+u.lastName)
-            print("posts"+u.posts)
+        u = User("", s.split(" ")[0], s.split(" ")[1])
+        users.append(u)
+        print("first"+u.firstName)
+        print("last"+u.lastName)
+    return users
