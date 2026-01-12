@@ -1,4 +1,8 @@
 from dataclasses import *
 from dataToUsers import dataToUsers
+from ReadFile import readfile
+from stuff import import_friends
 
-dataToUsers(["""Tristan Patterson posted a "Nobody at all:" meme about hockey on January 05, 2020""", """Crystal Coleman posted a "Nobody at all:" meme about dinosaurs on January 07, 2020""", """James Kelly posted a "This is fine" meme about dogs on January 10, 2020"""])
+lines = readfile()
+users = dataToUsers(lines)
+import_friends(lines, users)

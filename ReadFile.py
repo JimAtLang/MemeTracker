@@ -1,5 +1,5 @@
 def readfile():
-    f = open("file.txt", "r")
+    f = open("log.txt", "r")
     lines = f.readlines()
     f.close()
     return lines

@@ -18,6 +18,6 @@ def dataToUsers(strings:list[str]):
             #this stuff is when it misses everything
         u = User("", s.split(" ")[0], s.split(" ")[1])
         users.append(u)
-        print("first"+u.firstName)
-        print("last"+u.lastName)
+        # print("first"+u.firstName)
+        # print("last"+u.lastName)
     return users
