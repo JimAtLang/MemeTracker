@@ -4,7 +4,11 @@
     <content url="file://$MODULE_DIR$">
       <excludeFolder url="file://$MODULE_DIR$/.venv" />
     </content>
+<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="Python 3.14 (MemeTracker)" jdkType="Python SDK" />
+=======
+    <orderEntry type="jdk" jdkName="Python 3.13 (MemeTracker)" jdkType="Python SDK" />
+>>>>>>> bb9d1ec000f8aec01fccdd16667a0d6234ba03e2
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
