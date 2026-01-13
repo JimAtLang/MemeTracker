@@ -1,3 +1,5 @@
+fd = {}
+
 def get_friends():
     f = open("log.txt", "r")
     lines = f.readlines()
@@ -23,6 +25,8 @@ def get_friends():
             name2 += word + " "
             wordnumber += 1
             word = words[wordnumber]
-        # now we need to make a dictionary
-        print(name1, name2)
-    return friends
+        if not name1 in fd:
+            fd[name1] = []
+        if not name2 in fd[name1]:
+            fd[name1].append(name2)
+    return fd
